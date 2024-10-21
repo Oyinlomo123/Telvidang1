@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { Router, Routes, Route } from "react-router-dom"
 import Home from "./component/Home"
 import Hero from "./sticky/Hero"
 import Contact from "./sticky/Contact"
@@ -14,9 +14,8 @@ function App() {
   
 
   return (
-    <Router>
+    <>
       <Hero/>
-      
      <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/aboutus" element={<About/>}></Route>
@@ -28,7 +27,7 @@ function App() {
      </Routes>
      <Contact/>
      <Footer/>
-    </Router>
+    </>
   )
 }
 
