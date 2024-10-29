@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import img from "../assets/image.png"
+import React, {useEffect,} from "react"
 
 const Hero = () => {
 
